@@ -1,0 +1,29 @@
+{
+  "name": "news_chat",
+  "version": "1.0.0",
+  "description": "a way to chat about news",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JF-13/news_chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JF-13/news_chat/issues"
+  },
+  "homepage": "https://github.com/JF-13/news_chat#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.5",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.13",
+    "request": "^2.82.0"
+  }
+}
