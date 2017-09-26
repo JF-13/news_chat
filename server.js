@@ -13,7 +13,7 @@ mongoose.Promise = Promise;
 
 var app = express();
 
-var PORT = process.env.PORT || 7000;
+var PORT = process.env.PORT || 3000;
 
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://heroku_dq6hsw5w:c16k7q27u3lb2pqvjm98rdeoc5@ds147864.mlab.com:47864/heroku_dq6hsw5w");
+//THIS IS FOR LOCAL DB
 //mongoose.connect("mongodb://localhost/test");
 var db = mongoose.connection;
 
@@ -73,7 +74,7 @@ app.get("/scrape", function(req, res) {
 
 // This will get the articles we scraped from the mongoDB
 app.get("/articles", function(req, res) {
-  console.log('im trying to get articles');
+
   // Grab every doc in the Articles array
   Article.find({}, function(error, doc) {
     // Log any errors
@@ -146,7 +147,7 @@ app.post("/articles/:id", function(req, res) {
 });
 
 
-// Listen on port 3000
+// Listen on port 7000
 app.listen(PORT, function() {
-  console.log("App running on port" + PORT);
+  console.log("App running on port ", PORT);
 });
