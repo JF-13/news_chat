@@ -13,6 +13,8 @@ mongoose.Promise = Promise;
 
 var app = express();
 
+var PORT = process.env.PORT || 7000;
+
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
   extended: false
@@ -145,6 +147,6 @@ app.post("/articles/:id", function(req, res) {
 
 
 // Listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
+app.listen(PORT, function() {
+  console.log("App running on port" + PORT);
 });
