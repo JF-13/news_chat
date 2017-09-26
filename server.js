@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://heroku_dq6hsw5w:c16k7q27u3lb2pqvjm98rdeoc5@ds147864.mlab.com:47864/heroku_dq6hsw5w");
+mongoose.connect("---secret---");
 //THIS IS FOR LOCAL DB
 //mongoose.connect("mongodb://localhost/test");
 var db = mongoose.connection;
