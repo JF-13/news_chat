@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>newsed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Playfair+Display|Raleway" rel="stylesheet">
+
+    <style>
+      body { background-color: rgb(70, 108, 170) }
+      .title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 4em;
+        color: rgb(198, 201, 206);
+      }
+      .subheading {
+        font-family: 'Bubbler One', sans-serif;
+        font-size: 1.7em;
+        color: rgb(198, 201, 206);
+      }
+      #deletenote {
+        display: inline-block;
+      }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        background-color
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+        font-family: 'Raleway', sans-serif;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+        font-family: 'Raleway', sans-serif;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: rgba(230, 236, 247, 0.5);
+        border-radius: 4px;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      button {
+        color: grey;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 class="title">Newsed</h1>
+      <h2 class="subheading"><i>news headlines amongst friends</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
